@@ -11,7 +11,8 @@ body:
     attributes:
       label: NATS version
       description: What is the version of NATS Rust client that you're using?
-      placeholder: Run -> grep 'name = "nats"' Cargo.lock -A 1
+      placeholder: |
+        Run: grep 'name = "nats"' Cargo.lock -A 1
     validations:
       required: true
   - type: input
@@ -19,7 +20,8 @@ body:
     attributes:
       label: rustc version
       description: What is the version of rustc that you're using?
-      placeholder: Run -> rustc --version (we support Rust 1.41 and up)
+      placeholder: |
+        Run: rustc --version (we support Rust 1.41 and up)
     validations:
       requred: true
   - type: input
